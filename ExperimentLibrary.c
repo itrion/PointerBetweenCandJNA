@@ -12,14 +12,6 @@ void takesAPointerAndStoreAString(void* pointer){
 	printf("LIB: pointer value is: \"%s\"\n", pointer);
 }
 
-void* getPointerContainingAString(){
-	void* pointer = malloc(sizeof(char) * 128);
-	printf("LIB: allocated memory for %d bytes\n", 128);
-	strcpy(pointer, MESSAGE_TO_STORE);
-	printf("LIB: pointer value is: \"%s\"\n", pointer);
-	return pointer;
-}
-
 void takesAPointerToPointerAndStoreAString(void** pointerToPointer){
 	void* pointer = malloc(sizeof(char) * 128);
 	printf("LIB: allocated memory for %d bytes\n", 128);
