@@ -2,12 +2,12 @@ import com.sun.jna.Memory;
 import com.sun.jna.Pointer;
 import com.sun.jna.ptr.PointerByReference;
 
-public class ExperimentWithPointers {
+public class ExperimentClient {
 
     private ExperimentLibrary library = ExperimentLibrary.INSTANCE;
 
     public static void main(String... args) {
-        new ExperimentWithPointers().execute();
+        new ExperimentClient().execute();
     }
 
     public void execute() {
